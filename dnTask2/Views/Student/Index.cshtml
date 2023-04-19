@@ -1,0 +1,24 @@
+﻿@using dnTask2.ViewModels
+@using dnTask2.Models
+@model StudentViewModel
+@{
+
+}
+
+<h1>Students</h1>
+
+<ul>
+    @foreach (Student item in Model.Students)
+    {
+        <li>@item.Id: @item.FullName - @item.Point</li>
+    }
+</ul>
+
+<h1>Groups</h1>
+
+<ul>
+    @foreach (Group item in Model.Groups)
+    {
+        <li>@item.Id: @item.Name</li>
+    }
+</ul>
